@@ -1,9 +1,9 @@
 # py3status configuration file (~/.config/py3status/config)
 
 order += "volume master"
-order += "wireless _first"
-order += "ethernet _first"
-order += "battery all"
+#order += "wireless _first"
+order += "ethernet _first_"
+#order += "battery all"
 order += "clock"
 
 volume master {
