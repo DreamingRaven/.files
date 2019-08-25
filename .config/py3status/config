@@ -1,10 +1,20 @@
 # py3status configuration file (~/.config/py3status/config)
 
+order += "spotify"
 order += "volume master"
 #order += "wireless _first"
 order += "ethernet _first_"
 #order += "battery all"
 order += "clock"
+
+spotify {
+    # requires: python-dbus
+    button_next = 4
+    button_play_pause = 1
+    button_previous = 5
+    format = "{title} by {artist} -> {time}"
+    format_down = "no Spotify"
+}
 
 volume master {
     format = "vol: %volume"
