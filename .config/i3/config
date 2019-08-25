@@ -171,10 +171,8 @@ exec redshift -l 53.2810570:-0.6289510 -t 2500:2000 &
 #!/bin/bash
 exec xautolock -detectsleep \
         -time 2 \
-        -locker "i3lock -f -t -i /home/archer/docs/archLinuxTeal_1080p.png" \
+        -locker "i3lock -f -t -i ${HOME}/docs/img/archLinuxTeal_1080p.png" \
         -secure \
-        -notify 30 \
-        -notifier "notify-send -u critical -t 10000 -- 'locking screen in 30 seconds'" \
         -corners --0+ \
         -cornerdelay 1 \
         -cornerredelay 5 &
