@@ -12,12 +12,12 @@ spotify {
     button_next = 4
     button_play_pause = 1
     button_previous = 5
-    format = "{title} by {artist} -> {time}"
+    format = "\uf1bc: {title} by {artist} -> {time}"
     format_down = "no Spotify"
 }
 
 volume master {
-    format = "vol: %volume"
+    format = "\uf001: %volume"
     device = "default"
     mixer = "Master"
     mixer_idx = 0
@@ -30,15 +30,15 @@ wireless _first_ {
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
+        format_up = "\uf796: %ip (%speed)"
         format_down = "E: down"
 }
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "\uf244: %status %percentage %remaining"
 }
 
 clock {
 	format = ["{Local}"]
-	format_time = "{name} %Y-%m-%d %H:%M"
+	format_time = "\uf017: {name} %Y-%m-%d %H:%M"
 }
