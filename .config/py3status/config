@@ -1,12 +1,12 @@
 # py3status configuration file (~/.config/py3status/config)
 
-order += "volume master"
 #order += "wireless _first"
 order += "nvidia_smi"
 order += "sysdata"
 order += "lm_sensors"
 order += "ethernet _first_"
 order += "spotify"
+order += "volume master"
 #order += "battery all"
 order += "clock"
 
@@ -37,7 +37,7 @@ nvidia_smi {
 }
 
 sysdata {
-	format = "[\?color=cpu_used_percent CPU: {cpu_used_percent}%], [\?color=mem_used_percent Mem: {mem_used}/{mem_total} {mem_total_unit} ({mem_used_percent}%)]"
+	format = "[\?color=cpu_used_percent \uf2c7 CPU: {cpu_used_percent}%], [\?color=mem_used_percent Mem: {mem_used}/{mem_total} {mem_total_unit} ({mem_used_percent}%)]"
 }
 
 ethernet _first_ {
