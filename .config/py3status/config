@@ -3,6 +3,7 @@
 order += "spotify"
 order += "volume master"
 #order += "wireless _first"
+order += "nvidia_smi"
 order += "ethernet _first_"
 #order += "battery all"
 order += "clock"
@@ -27,6 +28,10 @@ volume master {
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
+}
+
+nvidia_smi {
+	format = "\uf769: {format_gpu}"
 }
 
 ethernet _first_ {
