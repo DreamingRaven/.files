@@ -15,8 +15,19 @@ spotify {
     button_next = 4
     button_play_pause = 1
     button_previous = 5
-    format = "\uf1bc: {title} by {artist} -> {time}"
+    format = "\uf1bc: {title} -> {time}"
     format_down = "no Spotify"
+}
+
+lm_sensors {
+    format_chip = '{format_sensor}'
+    format_sensor = '[\?if=name=core_0 CPU1 ]'
+    format_sensor += '[\?if=name=core_1 CPU2 ]'
+    format_sensor += '[\?if=name=core_2 CPU3 ]'
+    format_sensor += '[\?if=name=core_3 CPU4 ]'
+    format_sensor += '[\?if=name=gpu_core GPU ]'
+    format_sensor += '[\?color=auto.input {input}°C]'
+    sensors = ['core*', 'temp*']
 }
 
 volume master {
@@ -36,8 +47,18 @@ nvidia_smi {
 	format = "\uf769: {format_gpu}"
 }
 
+#sysdata {
+#	format = "[\?color=cpu_used_percent \uf2c7 CPU: {cpu_used_percent}%], [\?color=mem_used_percent Mem: {mem_used}/{mem_total} {mem_total_unit} ({mem_used_percent}%)]"
+#}
+
 sysdata {
-	format = "[\?color=cpu_used_percent \uf2c7 CPU: {cpu_used_percent}%], [\?color=mem_used_percent Mem: {mem_used}/{mem_total} {mem_total_unit} ({mem_used_percent}%)]"
+    format = "CPU: [\?color=cpu_used_percent {format_cpu}]"
+    format_cpu = "[\?if=used_percent>80 ⡇|[\?if=used_percent>60 ⡆"
+    format_cpu += "|[\?if=used_percent>40 ⡄|[\?if=used_percent>20 ⡀"
+    format_cpu += "|⠀]]]]"
+    format_cpu_separator = ""
+    thresholds = [(0, "good"), (60, "degraded"), (80, "bad")]
+    cache_timeout = 1
 }
 
 ethernet _first_ {
