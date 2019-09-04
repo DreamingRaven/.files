@@ -544,7 +544,7 @@ c.content.cookies.accept = 'no-3rdparty'
 ## Store cookies. Note this option needs a restart with QtWebEngine on Qt
 ## < 5.9.
 ## Type: Bool
-# c.content.cookies.store = True
+c.content.cookies.store = True
 
 ## Default encoding to use for websites. The encoding must be a string
 ## describing an encoding such as _utf-8_, _iso-8859-1_, etc.
@@ -558,7 +558,7 @@ c.content.cookies.accept = 'no-3rdparty'
 ##   - true
 ##   - false
 ##   - ask
-# c.content.desktop_capture = 'ask'
+c.content.desktop_capture = 'ask'
 
 ## Try to pre-fetch DNS entries to speed up browsing.
 ## Type: Bool
@@ -575,22 +575,22 @@ c.content.cookies.accept = 'no-3rdparty'
 ##   - true
 ##   - false
 ##   - ask
-# c.content.geolocation = 'ask'
+c.content.geolocation = 'ask'
 
 ## Value to send in the `Accept-Language` header. Note that the value
 ## read from JavaScript is always the global value.
 ## Type: String
-# c.content.headers.accept_language = 'en-US,en'
+c.content.headers.accept_language = 'en-US,en'
 
 ## Custom headers for qutebrowser HTTP requests.
 ## Type: Dict
-# c.content.headers.custom = {}
+c.content.headers.custom = {}
 
 ## Value to send in the `DNT` header. When this is set to true,
 ## qutebrowser asks websites to not track your identity. If set to null,
 ## the DNT header is not sent at all.
 ## Type: Bool
-# c.content.headers.do_not_track = True
+c.content.headers.do_not_track = True
 
 ## When to send the Referer header. The Referer header tells websites
 ## from which website you were coming from when visiting them. No restart
@@ -722,7 +722,7 @@ c.content.mouse_lock = 'ask'
 ##   - true
 ##   - false
 ##   - ask
-# c.content.notifications = 'ask'
+c.content.notifications = 'ask'
 
 ## Allow pdf.js to view PDF files in the browser. Note that the files can
 ## still be downloaded by clicking the download button in the pdf.js
@@ -738,11 +738,11 @@ c.content.pdfjs = True
 ##   - true
 ##   - false
 ##   - ask
-# c.content.persistent_storage = 'ask'
+c.content.persistent_storage = 'ask'
 
 ## Enable plugins in Web pages.
 ## Type: Bool
-# c.content.plugins = False
+c.content.plugins = False
 
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
@@ -759,11 +759,11 @@ c.content.pdfjs = True
 ## Valid values:
 ##   - system: Use the system wide proxy.
 ##   - none: Don't use any proxy
-# c.content.proxy = 'system'
+c.content.proxy = 'system'
 
 ## Send DNS requests over the configured proxy.
 ## Type: Bool
-# c.content.proxy_dns_requests = True
+c.content.proxy_dns_requests = True
 
 ## Allow websites to register protocol handlers via
 ## `navigator.registerProtocolHandler`.
@@ -780,7 +780,7 @@ c.content.pdfjs = True
 ##   - true
 ##   - false
 ##   - ask
-# c.content.ssl_strict = 'ask'
+c.content.ssl_strict = 'ask'
 
 ## List of user stylesheet filenames to use.
 ## Type: List of File, or File
@@ -820,7 +820,7 @@ c.content.webgl = False
 ## Prompt the user for the download location. If set to false,
 ## `downloads.location.directory` will be used.
 ## Type: Bool
-# c.downloads.location.prompt = True
+c.downloads.location.prompt = True
 
 ## Remember the last used download directory.
 ## Type: Bool
@@ -864,7 +864,7 @@ c.editor.command = ['urxvt', '-e', 'nvim', '{}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
-# c.editor.encoding = 'utf-8'
+c.editor.encoding = 'utf-8'
 
 ## Font used in the completion categories.
 ## Type: Font
