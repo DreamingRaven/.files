@@ -630,7 +630,7 @@ c.content.host_blocking.lists = ['https://raw.githubusercontent.com/StevenBlack/
 ## setting with a URL pattern instead. Local domains are always exempt
 ## from hostblocking.
 ## Type: List of UrlPattern
-# c.content.host_blocking.whitelist = ['piwik.org']
+c.content.host_blocking.whitelist = []
 
 ## Enable hyperlink auditing (`<a ping>`).
 ## Type: Bool
