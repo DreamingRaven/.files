@@ -530,7 +530,7 @@
 ## Allow websites to read canvas elements. Note this is needed for some
 ## websites to work properly.
 ## Type: Bool
-# c.content.canvas_reading = True
+c.content.canvas_reading = False
 
 ## Which cookies to accept.
 ## Type: String
@@ -539,7 +539,7 @@
 ##   - no-3rdparty: Accept cookies from the same origin only. This is known to break some sites, such as GMail.
 ##   - no-unknown-3rdparty: Accept cookies from the same origin only, unless a cookie is already set for the domain. On QtWebEngine, this is the same as no-3rdparty.
 ##   - never: Don't accept cookies at all.
-# c.content.cookies.accept = 'all'
+c.content.cookies.accept = 'no-3rdparty'
 
 ## Store cookies. Note this option needs a restart with QtWebEngine on Qt
 ## < 5.9.
@@ -609,7 +609,7 @@
 
 ## Enable host blocking.
 ## Type: Bool
-# c.content.host_blocking.enabled = True
+c.content.host_blocking.enabled = True
 
 ## List of URLs of lists which contain hosts to block.  The file can be
 ## in one of the following formats:  - An `/etc/hosts`-like file - One
@@ -620,7 +620,7 @@
 ## The file `~/.config/qutebrowser/blocked-hosts` is always read if it
 ## exists.
 ## Type: List of Url
-# c.content.host_blocking.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
+c.content.host_blocking.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
 
 ## A list of patterns that should always be loaded, despite being ad-
 ## blocked. Note this whitelists blocked hosts, not first-party URLs. As
@@ -652,11 +652,11 @@
 
 ## Allow JavaScript to close tabs.
 ## Type: Bool
-# c.content.javascript.can_close_tabs = False
+c.content.javascript.can_close_tabs = False
 
 ## Allow JavaScript to open new tabs without user interaction.
 ## Type: Bool
-# c.content.javascript.can_open_tabs_automatically = False
+c.content.javascript.can_open_tabs_automatically = False
 
 ## Enable JavaScript.
 ## Type: Bool
@@ -696,7 +696,7 @@
 ##   - true
 ##   - false
 ##   - ask
-# c.content.media_capture = 'ask'
+c.content.media_capture = 'ask'
 
 ## Allow websites to lock your mouse pointer.
 ## Type: BoolAsk
@@ -704,7 +704,7 @@
 ##   - true
 ##   - false
 ##   - ask
-# c.content.mouse_lock = 'ask'
+c.content.mouse_lock = 'ask'
 
 ## Automatically mute tabs. Note that if the `:tab-mute` command is used,
 ## the mute status for the affected tab is now controlled manually, and
@@ -729,6 +729,7 @@
 ## viewer.
 ## Type: Bool
 # c.content.pdfjs = False
+c.content.pdfjs = True
 
 ## Allow websites to request persistent storage quota via
 ## `navigator.webkitPersistentStorage.requestQuota`.
@@ -788,6 +789,7 @@
 ## Enable WebGL.
 ## Type: Bool
 # c.content.webgl = True
+c.content.webgl = False
 
 ## Which interfaces to expose via WebRTC. On Qt 5.10, this option doesn't
 ## work because of a Qt bug.
@@ -858,6 +860,7 @@
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
 # c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['urxvt', '-e', 'nvim', '{}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
@@ -902,7 +905,7 @@
 ## Default monospace fonts. Whenever "monospace" is used in a font
 ## setting, it's replaced with the fonts listed here.
 ## Type: Font
-# c.fonts.monospace = '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
+c.fonts.monospace = 'Inconsolata, "xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
 
 ## Font used for prompts.
 ## Type: Font
@@ -1364,6 +1367,7 @@
 ##   - default-page: Load the default page.
 ##   - close: Close the window.
 # c.tabs.last_close = 'ignore'
+c.tabs.last_close = 'close'
 
 ## Maximum width (in pixels) of tabs (-1 for no maximum). This setting
 ## only applies when tabs are horizontal. This setting does not apply to
