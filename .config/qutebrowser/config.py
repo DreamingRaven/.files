@@ -584,7 +584,7 @@ c.content.headers.accept_language = 'en-US,en;q=0.5'
 
 ## Custom headers for qutebrowser HTTP requests.
 ## Type: Dict
-# c.content.headers.custom = {}
+c.content.headers.custom = {"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
 
 ## Value to send in the `DNT` header. When this is set to true,
 ## qutebrowser asks websites to not track your identity. If set to null,
