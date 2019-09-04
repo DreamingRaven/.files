@@ -580,7 +580,7 @@ c.content.geolocation = 'ask'
 ## Value to send in the `Accept-Language` header. Note that the value
 ## read from JavaScript is always the global value.
 ## Type: String
-c.content.headers.accept_language = 'en-US,en'
+c.content.headers.accept_language = 'en-US,en;q=0.5'
 
 ## Custom headers for qutebrowser HTTP requests.
 ## Type: Dict
