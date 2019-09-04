@@ -606,6 +606,7 @@ c.content.headers.do_not_track = True
 ## read from JavaScript is always the global value.
 ## Type: String
 # c.content.headers.user_agent = None
+c.content.headers.user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 '
 
 ## Enable host blocking.
 ## Type: Bool
@@ -1119,7 +1120,7 @@ c.fonts.monospace = 'Inconsolata, "xos4 Terminus", Terminus, Monospace, "DejaVu 
 ## Duration (in milliseconds) to show messages in the statusbar for. Set
 ## to 0 to never clear messages.
 ## Type: Int
-# c.messages.timeout = 2000
+c.messages.timeout = 9000
 
 ## How to open links in an existing instance if a new one is launched.
 ## This happens when e.g. opening a link from a terminal. See
