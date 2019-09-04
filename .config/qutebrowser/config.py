@@ -584,7 +584,7 @@ c.content.headers.accept_language = 'en-US,en'
 
 ## Custom headers for qutebrowser HTTP requests.
 ## Type: Dict
-c.content.headers.custom = {}
+# c.content.headers.custom = {}
 
 ## Value to send in the `DNT` header. When this is set to true,
 ## qutebrowser asks websites to not track your identity. If set to null,
@@ -652,11 +652,11 @@ c.content.host_blocking.whitelist = []
 
 ## Allow JavaScript to close tabs.
 ## Type: Bool
-c.content.javascript.can_close_tabs = False
+# c.content.javascript.can_close_tabs = False
 
 ## Allow JavaScript to open new tabs without user interaction.
 ## Type: Bool
-c.content.javascript.can_open_tabs_automatically = False
+# c.content.javascript.can_open_tabs_automatically = False
 
 ## Enable JavaScript.
 ## Type: Bool
@@ -763,7 +763,7 @@ c.content.proxy = 'system'
 
 ## Send DNS requests over the configured proxy.
 ## Type: Bool
-c.content.proxy_dns_requests = True
+# c.content.proxy_dns_requests = True
 
 ## Allow websites to register protocol handlers via
 ## `navigator.registerProtocolHandler`.
