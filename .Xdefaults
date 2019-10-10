@@ -1,0 +1,46 @@
+! urxvt specific settings
+URxvt.font: xft:Inconsolata:size=12
+URxvt.scrollBar:false
+urxvt*transparent:true
+urxvt*shading: 80
+
+*.fadeColor: #002b36
+*.pointerColorBackground: #586e75
+*.pointerColorForeground: #93a1a1
+
+!! special
+*.foreground: #657b83
+*.background: #002b36
+*.cursorColor: #93a1a1
+
+! black (0=dark_pastel_green, 8=grey)
+*.color0:       #3b60ac
+*.color8:       #373b41
+
+! red (1=true_orange, 9=pastel_orange)
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green (2=neon_green, 10=dark_green)
+*.color2:       #8c9440
+*.color10:      #2f692f
+
+! yellow (3=pastel_light_orange, 11=pastel_yellow)
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue (4=pastel_green sim2:6, 12=hot_pink)
+*.color4:       #5f819d
+*.color12:      #aa00e0
+
+! magenta (5=wood_brown, 13=cream_brown)
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan (6=pastel_green sim2:4, 14=pastel_purple)
+*.color6:       #5e8d87
+*.color14:      #6432b7
+
+! white (7=turqois_green, 15=cream)
+*.color7:       #00a5ff
+*.color15:      #c5c8c6
