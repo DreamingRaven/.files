@@ -22,5 +22,6 @@ fi
 #export LD_LIBRARY_PATH=/opt/cuda/lib64
 export EDITOR=nvim
 export VISUAL=$EDITOR
+cd ${HOME}
 exec fish
 

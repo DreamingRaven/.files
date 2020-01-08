@@ -71,6 +71,7 @@ battery all {
 }
 
 clock {
+# requires pytz
 	format = ["{Local}"]
 	format_time = "\uf017: {name} %Y-%m-%d %H:%M"
 }
