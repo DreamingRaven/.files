@@ -10,6 +10,8 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR=nvim
 export VISUAL=${EDITOR}
+# https://stackoverflow.com/questions/49630601/signing-commits-with-git-doesnt-ask-for-my-passphrase
+export GPG_TTY=$(tty)
 
 # start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
