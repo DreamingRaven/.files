@@ -33,3 +33,5 @@ lm_sensors
 openssh
 autossh
 qutebrowser
+wpa_supplicant
+base-devel
