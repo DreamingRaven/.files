@@ -1,0 +1,3 @@
+[submodule "git/pikaur"]
+	path = git/pikaur
+	url = https://aur.archlinux.org/pikaur
