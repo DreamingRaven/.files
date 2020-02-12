@@ -2,5 +2,9 @@
   core:
     autoHideMenuBar: true
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
   welcome:
     showOnStartup: false
