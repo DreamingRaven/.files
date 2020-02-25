@@ -47,12 +47,12 @@
    control + b:2
 
 #volume_up
-"pactl set-sink-volume @DEFAULT_SINK@ +1000"
+"pactl set-sink-volume @DEFAULT_SINK@ -1000"
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
 #volume_down
-"pactl set-sink-volume @DEFAULT_SINK@ -1000"
+"pactl set-sink-volume @DEFAULT_SINK@ +1000"
     m:0x0 + c:123
     XF86AudioRaiseVolume 
 
