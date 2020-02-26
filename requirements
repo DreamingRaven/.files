@@ -38,3 +38,5 @@ base-devel
 atom
 gnu-free-fonts
 xbindkeys
+hunspell
+hunspell-en_GB
