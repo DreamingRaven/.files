@@ -19,9 +19,12 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
     eval "$(<~/.ssh-agent-thing)"
 fi
 
+export ELECTRON_TRASH=gio
 #export LD_LIBRARY_PATH=/opt/cuda/lib64
 export EDITOR=nvim
 export VISUAL=$EDITOR
+export BROWSER=firefox
 cd ${HOME}
+#exec zsh
 exec fish
 
