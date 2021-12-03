@@ -10,8 +10,7 @@ set shiftwidth=4
 set number
 highlight clear SignColumn
 
-"line length marker
-"set colorcolumn=81
+"line length marker https://www.youtube.com/watch?v=aHm36-na4-4
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
@@ -55,6 +54,9 @@ call plug#end()
 "Move between panes
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+"Toggle CHADtree
+nnoremap <C-n> :CHADopen<CR>
 
 "CHAD tree open and close
 nnoremap <leader>v <cmd>CHADopen<cr>

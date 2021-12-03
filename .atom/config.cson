@@ -1,14 +1,85 @@
 "*":
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "linter-pylint"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
-    useTreeSitterParsers: false
   editor:
+    fontSize: 22
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "3f2e32bf-6ade-4329-a8dd-1c06c29c2151"
+  "file-header":
+    realname: "George Onoufriou"
+    username: "archer"
+  "linter-pylama":
+    pylamaVersion: "external"
+  "linter-ui-default":
+    panelHeight: 59
+    showPanel: true
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "lens-mode": true
+      "lens-modeDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "python-autopep8":
+    formatOnSave: true
+  "rst-preview-pandoc":
+    pandocOpts: "-frst -thtml --webtex"
+  "spell-check":
+    addKnownWords: true
+    enableDebug: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.tex.latex"
+    ]
+    knownWords: [
+      "convolutional"
+      "cyphertext"
+      "cyphertexts"
+      "backpropagation"
+      "Jupyter"
+      "softmax"
+      "FHE"
+      "MNIST"
+      "EDLaaS"
+      "polytunnel"
+      "dockerised"
+      "ReLU"
+      "Homomorphic"
+      "CKKS"
+      "homomorphic"
+      "plaintext"
+      "Assange"
+      "Snowden"
+      "GDPR"
+      "CIFAR"
+      "NumPy"
+      "CuPy"
+      "Dask"
+      "CUDA"
+      "parameterisation"
+    ]
   welcome:
     showOnStartup: false
