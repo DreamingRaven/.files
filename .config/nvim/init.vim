@@ -10,12 +10,17 @@ set shiftwidth=4
 set number
 highlight clear SignColumn
 
+"line length marker
+"set colorcolumn=81
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
 "Deal with invisibles :help listchars
 set list
 "set nolist
 set listchars=tab:>\ ,eol:¬
 
-
+"------------------------------------------------------------------------------
 "Vim Plug reminder:
 "Install vim plug itself
 "Open this config in neovim
@@ -43,6 +48,7 @@ Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
+"------------------------------------------------------------------------------
 
 "KEY REMAPS AND ADDITIONAL PLUG SPECIFIC SETTINGS
 
