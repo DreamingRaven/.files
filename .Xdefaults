@@ -2,7 +2,7 @@
 ! URxvt.font: xft:Inconsolata:size=12
 URxvt.font: xft:FiraMono:size=12
 URxvt.scrollBar:false
-urxvt*transparent:true
+urxvt*transparent:false
 urxvt*shading: 80
 
 *.fadeColor: #002b36
