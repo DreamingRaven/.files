@@ -64,7 +64,8 @@ let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
-nnoremap <C-kDivide> <cmd>NERDCommenterToggle<cr>
+" FORWARD SLASH IS ^_ or _ for keymaps!!!!!!!!
+map <C-_> <plug>NERDCommenterToggle
 
 "MINIMAP
 let g:minimap_width = 10
