@@ -31,8 +31,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sleuth'
 Plug 'editorconfig/editorconfig-vim'
 
+"side minimap
+Plug 'wfxr/minimap.vim'
+
 "git helpers
 Plug 'airblade/vim-gitgutter'
+
+"commenting
+Plug 'preservim/nerdcommenter'
 
 "golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -50,6 +56,21 @@ call plug#end()
 "------------------------------------------------------------------------------
 
 "KEY REMAPS AND ADDITIONAL PLUG SPECIFIC SETTINGS
+"
+"NERD Commenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+nnoremap <C-kDivide> <cmd>NERDCommenterToggle<cr>
+
+"MINIMAP
+let g:minimap_width = 10
+let g:minimap_auto_start = 1
+let g:minimap_auto_start_win_enter = 1
+let g:minimap_highlight_range = 1
 
 "Move between panes
 nnoremap <C-Left> :tabprevious<CR>
