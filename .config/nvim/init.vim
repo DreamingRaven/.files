@@ -78,7 +78,7 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 "Toggle CHADtree
-nnoremap <C-n> :CHADopen<CR>
+nnoremap <C-Bslash> :CHADopen<CR>
 
 "CHAD tree open and close
 nnoremap <leader>v <cmd>CHADopen<cr>
