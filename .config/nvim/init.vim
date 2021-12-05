@@ -19,6 +19,28 @@ set list
 "set nolist
 set listchars=tab:>\ ,eol:¬
 
+function! WinMove(key)
+    let t:curwin = winnr()
+    exec "wincmd ".a:key
+    if (t:curwin == winnr())
+        if (match(a:key,'[jk]'))
+            wincmd v
+        else
+            wincmd s
+        endif
+        exec "wincmd ".a:key
+    endif
+endfunction
+
+nnoremap <silent> <C-h> :call WinMove('h')<CR>
+nnoremap <silent> <C-Left> :call WinMove('h')<CR>
+nnoremap <silent> <C-j> :call WinMove('j')<CR>
+nnoremap <silent> <C-Down> :call WinMove('j')<CR>
+nnoremap <silent> <C-k> :call WinMove('k')<CR>
+nnoremap <silent> <C-Up> :call WinMove('k')<CR>
+nnoremap <silent> <C-l> :call WinMove('l')<CR>
+nnoremap <silent> <C-Right> :call WinMove('l')<CR>
+
 "------------------------------------------------------------------------------
 "Vim Plug reminder:
 "Install vim plug itself
@@ -77,8 +99,8 @@ let g:minimap_highlight_range = 1
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
+"CHAD Tree
 "Toggle CHADtree
 nnoremap <C-Bslash> :CHADopen<CR>
-
 "CHAD tree open and close
 nnoremap <leader>v <cmd>CHADopen<cr>
