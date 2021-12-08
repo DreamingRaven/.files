@@ -17,7 +17,15 @@ call matchadd('ColorColumn', '\%81v', 100)
 "Deal with invisibles :help listchars
 set list
 "set nolist
-set listchars=tab:>\ ,eol:¬
+set showbreak=↪\
+set listchars=tab:→\ ,eol:¬,trail:·,nbsp:⍽,extends:>,precedes:<,space:·
+"" HACK to show only preceeding spaces https://stackoverflow.com/a/40498439/11164973
+" highlight WhiteSpaceBol ctermbg=blue
+" highlight WhiteSpaceMol ctermbg=background
+" match WhiteSpaceMol / /
+" 2match WhiteSpaceBol /^ \+/
+"REMOVE TRAILING WHITESPACE
+autocmd BufWritePre * :%s/\s\+$//e
 
 function! WinMove(key)
     let t:curwin = winnr()
