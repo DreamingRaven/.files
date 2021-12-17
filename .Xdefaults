@@ -1,6 +1,10 @@
 ! urxvt specific settings
-! URxvt.font: xft:Inconsolata:size=12
-URxvt.font: xft:FiraMono:size=12
+! Use to list fonts you want e.g: fc-list | grep "Fura"
+! Check name using: fc-match "FuraCode Nerd Font Mono"
+! If it returns your font by the name you desire you are set
+! if not you will need to search and config its name in fc-list
+! until you find an fc-match
+URxvt.font: xft:FuraCode Nerd Font Mono:size=12
 URxvt.scrollBar:false
 urxvt*transparent:false
 urxvt*shading: 80
