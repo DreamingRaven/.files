@@ -24,6 +24,8 @@ export ELECTRON_TRASH=gio
 export EDITOR=nvim
 export VISUAL=$EDITOR
 export BROWSER=firefox
+# chromium has some messed up ways of setting itself as default inspite of export browser
+# xdg-mime default firefox.desktop x-scheme-handler/https x-scheme-handler/http
 cd ${HOME}
 #exec zsh
 exec fish
